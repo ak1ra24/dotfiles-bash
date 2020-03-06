@@ -40,6 +40,9 @@ echo "#############################################################"
 echo "utils install"
 echo "#############################################################"
 apt install -y python3 python3-pip traceroute dnsutils tcpdump iputils-ping net-tools
+add-apt-repository ppa:longsleep/golang-backports -y
+apt update
+apt install -y golang-go
 
 echo "#############################################################"
 echo "create config file"

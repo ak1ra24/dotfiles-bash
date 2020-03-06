@@ -35,16 +35,16 @@ export LC_ALL='ja_JP.UTF-8'
 export LC_MESSAGES='ja_JP.UTF-8'
 
 # pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 # goenv
-export GOENV_ROOT=$HOME/.goenv
-export PATH=$GOENV_ROOT/bin:$PATH
-export GOENV_DISABLE_GOPATH=1
-eval "$(goenv init -)"
+# export GOENV_ROOT=$HOME/.goenv
+# export PATH=$GOENV_ROOT/bin:$PATH
+# export GOENV_DISABLE_GOPATH=1
+# eval "$(goenv init -)"
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
