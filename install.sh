@@ -54,6 +54,7 @@ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-pro
 chmod a+x ~/.git-prompt.sh
 cp ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 cp ~/dotfiles/.bashrc ~/.bashrc
+cp ~/dotfiles/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 # ln -sf ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 # ln -sf ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 # ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
