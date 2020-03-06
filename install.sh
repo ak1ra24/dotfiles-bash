@@ -52,19 +52,11 @@ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-com
 chmod a+x ~/.git-completion.bash
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -O ~/.git-prompt.sh
 chmod a+x ~/.git-prompt.sh
-cp ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
-cp ~/dotfiles/.bashrc ~/.bashrc
+# cp ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+# cp ~/dotfiles/.bashrc ~/.bashrc
 cp ~/dotfiles/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
-# ln -sf ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
-# ln -sf ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
-# ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
-# ln -sf ~/dotfiles/zsh/.zshenv ~/.zshenv
 
-# echo "install pyenv pyvirtualenv goenv"
-# apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
-# 	libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-# 	xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
-# git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-# git clone https://github.com/syndbg/goenv.git ~/.goenv
-# git clone https://github.com/pyenv/pyenv-virtualenv.git $HOME/.pyenv/plugins/pyenv-virtualenv
-
+pip3 install neovim
+ln -sf ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/.bashrc ~/.zshrc
