@@ -1,0 +1,76 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'dracula/vim'
+
+[[plugins]]
+repo = 'morhetz/gruvbox'
+hook_add = '''
+    colorscheme gruvbox
+'''
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+[[plugins]]
+repo = 'Townk/vim-autoclose'
+
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+ 
+# fzf.vim
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+hook_add = '''
+  source $HOME/dotfiles/nvim/plugins/fzf.rc.vim
+'''
+
+# lsp補完
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+if = '''executable('node') && executable('yarn')'''
+build = './install.sh nightly'
+merged = '0'
+
+#####
+# linter
+#####
+[[plugins]]
+repo = 'w0rp/ale'
+hook_add = '''
+  source $HOME/dotfiles/nvim/plugins/ale.rc.vim
+'''
+
+#####
+# git
+#####
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = '''
+  source $HOME/dotfiles/nvim/plugins/gitgutter.rc.vim
+'''
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+hook_add = '''
+  command Gst :Gstatus
+  command Gdf :Gdiff
+  command Gbl :Gblame
+'''
+
+#####
+# comment out
+#####
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+#####
+# lightline
+#####
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+  source $HOME/dotfiles/nvim/plugins/lightline.rc.vim
+'''
