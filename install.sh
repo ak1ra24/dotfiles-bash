@@ -52,11 +52,9 @@ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-com
 chmod a+x ~/.git-completion.bash
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -O ~/.git-prompt.sh
 chmod a+x ~/.git-prompt.sh
-# cp ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
-# cp ~/dotfiles/.bashrc ~/.bashrc
-cp ~/dotfiles/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 
 pip3 install neovim
 ln -sf ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
-ln -sf ~/dotfiles/.bashrc ~/.zshrc
+ln -sf ~/dotfiles/.bashrc ~/.bashrc
+cp ~/dotfiles/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
