@@ -16,5 +16,5 @@ jobs:
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
     - name: build and push image
       run: |
-          docker build -t "$DOCKER_USERNAME"/develop:bash .
+          docker build -t "$DOCKER_USERNAME"/develop:bash `pwd`
           docker push "$DOCKER_USERNAME"/develop:bash
