@@ -11,17 +11,20 @@ apt update
 apt-get install neovim -y
 
 echo "#############################################################"
-echo "install exa ripgrep fzf bat"
+echo "install exa ripgrep fzf bat fd"
 echo "#############################################################"
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.2/ripgrep_11.0.2_amd64.deb
 curl -LO https://github.com/sharkdp/bat/releases/download/v0.12.1/bat_0.12.1_amd64.deb
 curl -LO https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip
+curl -LO https://github.com/sharkdp/fd/releases/download/v7.4.0/fd_7.4.0_amd64.deb
 dpkg -i ripgrep_11.0.2_amd64.deb
 dpkg -i bat_0.12.1_amd64.deb
+dpkg -i fd_7.4.0_amd64.deb
 unzip exa-linux-x86_64-0.9.0.zip -d /usr/local/bin
 mv /usr/local/bin/exa-linux-x86_64 /usr/local/bin/exa
 rm -rf ripgrep_11.0.2_amd64.deb
 rm -rf bat_0.12.1_amd64.deb
+rm -rf fd_7.4.0_amd64.deb
 rm -rf exa-linux-x86_64-0.9.0.zip
 
 echo "#############################################################"
@@ -39,7 +42,7 @@ apt-get install -y yarn
 echo "#############################################################"
 echo "utils install"
 echo "#############################################################"
-apt install -y python3 python3-pip traceroute dnsutils tcpdump iputils-ping net-tools
+apt install -y python3 python3-pip traceroute dnsutils tcpdump iputils-ping net-tools iproute2
 add-apt-repository ppa:longsleep/golang-backports -y
 apt update
 apt install -y golang-go

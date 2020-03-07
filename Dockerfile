@@ -10,7 +10,7 @@ ENV LANG="ja_JP.UTF8"\
     LC_MEASUREMENT="ja_JP.UTF8"
 
 RUN apt update \
- && apt install -y git curl wget unzip vim
+ && apt install -y git curl wget unzip vim language-pack-ja
 
 RUN git clone https://github.com/ak1ra24/dotfiles-bash.git dotfiles
 
