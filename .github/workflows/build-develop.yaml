@@ -1,0 +1,20 @@
+name: "Build Devlop Image"
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Build devlop Container Image
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: docker login
+      run: echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+    - name: build and push image
+      run: |
+          docker build -t $DOCKER_USERNAME/develop:bash .
+          docker push $DOCKER_USERNAME/develop:bash
