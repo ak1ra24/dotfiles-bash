@@ -12,6 +12,9 @@ alias ls="exa --icons"
 alias ll="exa -l --icons"
 alias la="exa -al --icons"
 
+alias ga="git add"
+alias gcm="git commit -m"
+alias gdf="git diff --name-only"
 
 ###############
 # Prompt
