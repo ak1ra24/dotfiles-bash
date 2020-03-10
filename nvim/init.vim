@@ -3,9 +3,6 @@
 """"""""""""""""
 set number 
 set autoindent
-set tabstop=2  
-set shiftwidth=2 
-set expandtab    
 set splitright 
 set clipboard=unnamed
 set hls         
@@ -19,7 +16,6 @@ set inccommand=split
 set tabstop=4
 set shiftwidth=4
 set softtabstop=0
-set expandtab
 set smarttab
 set shiftround
 set mouse=a
